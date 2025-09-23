@@ -44,9 +44,9 @@ export default function Login() {
       toast.success("You logedIn successfully ❤️", { position: "top-center", duration: 3000 });
       router.push("/"); // redirect to the home page after successful login
       } 
-      else {
-        toast.error(res?.error ?? "Login Failed", { position: "top-center", duration: 3000 });
-      }
+      // else {
+      //   toast.error(res?.error ?? "Login Failed", { position: "top-center", duration: 3000 });
+      // }
     } catch (error) {
       toast.error(error instanceof Error ? "Invalid credentials, please try again ❌" : "Unknown error", { position: "top-center", duration: 3000 });
     }
