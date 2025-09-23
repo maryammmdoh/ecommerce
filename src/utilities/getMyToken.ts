@@ -15,7 +15,7 @@ export default async function getMyToken() {
       secret: process.env.NEXTAUTH_SECRET!,
     });
 
-    // console.log(token)
+    console.log("TOKEN------>" , token)
 
     return token?.token || null;
   } catch (err) {
