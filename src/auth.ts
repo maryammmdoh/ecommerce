@@ -61,10 +61,13 @@ export const authoptions: NextAuthOptions = {
             id: decodedtoken.id,
             user: payload.user,
             token: payload.token,
+            
           };
         } else {
           throw new Error(payload.message || "Invalid credentials");
         }
+
+        
       },
     }),
   ],
