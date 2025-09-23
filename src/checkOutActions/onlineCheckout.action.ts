@@ -2,7 +2,7 @@
 import getMyToken from "@/utilities/getMyToken";
 import { CheckOutType } from "@/schema/checkOut.schema";
 
-  export default async function onlinePayment(cartId:string, url=process.env.NEXT_URL, formValues:CheckOutType) {
+  export default async function onlinePayment(cartId:string, url=process.env.NEXTAUTH_URL, formValues:CheckOutType) {
    
      const token=await getMyToken()
     if (!token) {
