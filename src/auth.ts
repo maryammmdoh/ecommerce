@@ -7,7 +7,7 @@ import { jwtDecode } from "jwt-decode"; // to decode jwt token to get user id
 //this object will contain the configuration for nextauth
 
 //step1 --> create variable
-export const authoptions: NextAuthOptions = {
+export const authOptions: NextAuthOptions = {
   // we put pages object to customize the built-in pages of nextauth
   // here we are customizing the sign in page to be our custom login page
   // so when the user tries to access a protected route he will be redirected to our custom login page instead of the default nextauth login page
